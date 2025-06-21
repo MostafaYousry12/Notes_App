@@ -1,22 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/widgets/custom_card.dart';
 import 'package:notes_app/widgets/custom_icon.dart';
 
 class NotesCustomAppbar extends StatelessWidget {
-  const NotesCustomAppbar({super.key});
+  const NotesCustomAppbar({super.key, required this.title, required this.icon});
 
+  final String title;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          "Notes",
-          style: TextStyle(
+          title,
+          style: const TextStyle(
             fontSize: 24,
           ),
         ),
-        CustomIcon(),
+        CustomIcon(
+          icon: icon,
+        ),
       ],
     );
   }

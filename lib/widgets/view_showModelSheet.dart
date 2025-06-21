@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/constants.dart';
 import 'package:notes_app/widgets/custom_buttom.dart';
 import 'package:notes_app/widgets/custom_text_field.dart';
-import 'package:notes_app/widgets/view_showModelSheet.dart';
 
 class CustomShowModelSheet extends StatelessWidget {
   const CustomShowModelSheet({super.key});
