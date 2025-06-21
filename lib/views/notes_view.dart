@@ -11,11 +11,12 @@ class NotesView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
+              backgroundColor: const Color(0xff2a2a2a),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(24)),
               context: context,
               builder: (context) {
-                return CustomShowModelSheet();
+                return const CustomShowModelSheet();
               });
         },
         backgroundColor: Colors.blue,
@@ -24,7 +25,7 @@ class NotesView extends StatelessWidget {
           color: Colors.black,
         ),
       ),
-      body: NotesViewBody(),
+      body: const NotesViewBody(),
     );
   }
 }
