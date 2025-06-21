@@ -11,7 +11,16 @@ class CustomShowModelSheet extends StatelessWidget {
       child: Container(
         child: const Column(
           children: [
-            CustomTextField(),
+            CustomTextField(
+              hint: "Title",
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            CustomTextField(
+              hint: "Content",
+              maxLines: 5,
+            ),
           ],
         ),
       ),
