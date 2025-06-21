@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/widgets/custom_card.dart';
 import 'package:notes_app/widgets/custom_icon.dart';
 
 class NotesCustomAppbar extends StatelessWidget {
@@ -6,9 +7,9 @@ class NotesCustomAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+    return const Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
         Text(
           "Notes",
           style: TextStyle(
@@ -16,7 +17,7 @@ class NotesCustomAppbar extends StatelessWidget {
           ),
         ),
         CustomIcon(),
-      ]),
+      ],
     );
   }
 }
