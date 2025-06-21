@@ -8,5 +8,5 @@ A simple and elegant Flutter app for taking, editing, and deleting notes. Built 
 - 🗂 View all saved notes
 - 🖊 Edit existing notes
 - 🗑 Delete notes
-- 🌙 Light & Dark mode (optional)
+- 🌙 Dark mode
 - 💾 Local data storage (e.g., Hive / SharedPreferences)
