@@ -26,7 +26,14 @@ class CustomShowModelSheet extends StatelessWidget {
         builder: (context, state) {
           return AbsorbPointer(
               absorbing: state is AddNoteLoading ? true : false,
-              child: AddNote());
+              child: Padding(
+                padding: EdgeInsets.only(
+                  left: 24,
+                  right: 24,
+                  bottom: MediaQuery.of(context).viewInsets.bottom,
+                ),
+                child: AddNote(),
+              ));
         },
       ),
     );

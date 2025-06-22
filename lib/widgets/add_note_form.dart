@@ -23,9 +23,9 @@ class _AddNoteState extends State<AddNote> {
     return Form(
       key: formKey,
       autovalidateMode: autovalidateMode,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
-        child: SingleChildScrollView(
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 24),
           child: Container(
             child: Column(
               children: [
