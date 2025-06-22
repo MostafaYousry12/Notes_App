@@ -24,10 +24,9 @@ class CustomShowModelSheet extends StatelessWidget {
           }
         },
         builder: (context, state) {
-          return ModalProgressHUD(
-            inAsyncCall: state is AddNoteLoading ? true : false,
-            child: AddNote(),
-          );
+          return AbsorbPointer(
+              absorbing: state is AddNoteLoading ? true : false,
+              child: AddNote());
         },
       ),
     );
