@@ -32,7 +32,7 @@ https://drive.google.com/drive/u/2/folders/1jKVk5VZbrRBfBkFE7NMM5sMbC8L1qNyi
 
 - Implementing **CRUD operations** locally with Hive
 - Creating custom reusable **widgets** in Flutter
-- Managing **state** with `setState`
+- - Managing **state using Cubit** (Flutter BLoC)
 - Navigating between screens
 - Using **date formatting** and custom UI design
 
